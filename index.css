@@ -84,7 +84,7 @@ nav {
 
 .normal-paragraph {
     color: var(--light-grey);
-    line-height: 1.8rem;
+    line-height: 2rem;
 }
 
 .first-right button {
@@ -114,6 +114,36 @@ nav {
     background-color: var(--darker-blue);
     text-align: center;
     padding: 2rem;
+}
+
+footer {
+    background-color: var(--dark-blue);
+    padding: 4rem 0;
+}
+
+.footer-container > p {
+    color: white;
+    font-size: var(--medium);
+    text-align: center;
+}
+
+.footer-column {
+    margin-top: 6rem;
+}
+
+.column {
+    text-align: center;
+}
+
+.column a {
+    padding: 0;
+    margin: 0;
+    display: block;
+    line-height: 2rem;
+}
+
+.column a:hover {
+    text-decoration: underline;
 }
 
 .orange-button {
@@ -185,6 +215,14 @@ nav {
 
 
 @media (min-width: 768px) {
+    .row {
+        grid-column-gap: 4rem;
+    }
+    
+    .col-sm-6 {
+        grid-column: 6 span;
+    }
+
     .first-container {
         padding: 6rem 0 7rem 0;
     }
@@ -197,14 +235,18 @@ nav {
     .biggest-text {
         font-size: var(--largest);
     }
+
+    .footer-column {
+        justify-content: space-evenly;
+    }
+
+    .footer-container > p {
+        font-size: var(--larger);
+    }
 }
 
 
 @media (min-width: 950px) {
-    .row {
-        grid-column-gap: 4rem;
-    }
-
     .dropdown-button {
         display: none;
     }
@@ -232,6 +274,10 @@ nav {
 
 
 @media (min-width: 1200px) {
+    .col-lg-3 {
+        grid-column: 3 span;
+    }
+
     .col-lg-4 {
         grid-column: 4 span;
     }
