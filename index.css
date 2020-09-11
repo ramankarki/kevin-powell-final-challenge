@@ -17,11 +17,6 @@
     --largest: 2.5rem;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-}
-
 header {
     background-color: var(--darker-blue);
     position: sticky;
@@ -76,6 +71,31 @@ nav {
     color: white;
 }
 
+.first-container {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 3rem 0 4rem 0;
+}
+
+.biggest-text {
+    font-size: var(--larger);
+    line-height: 2.5rem;
+}
+
+.normal-paragraph {
+    color: var(--light-grey);
+    line-height: 1.8rem;
+}
+
+.first-right button {
+    margin-top: 2rem;
+}
+
+.second-container {
+    background-color: var(--lighter-grey);
+    padding: 4rem 0;
+}
+
 .orange-button {
     color: white;
     background-color: var(--dark-orange);
@@ -99,24 +119,9 @@ nav {
     transition-duration: 400ms;
 }
 
-.first-container {
-    background-color: var(--dark-blue);
-    color: white;
-    padding: 4rem 0;
-}
-
-.biggest-text {
-    font-size: var(--larger);
-    line-height: 2.5rem;
-}
-
-.normal-paragraph {
-    color: var(--light-grey);
-    line-height: 1.8rem;
-}
-
-.first-right button{
-    margin-top: 2rem;
+.container {
+    width: 90%;
+    margin: auto;
 }
 
 .row {
@@ -129,9 +134,35 @@ nav {
     grid-column: 12 span;
 }
 
+.center {
+    text-align: center;
+}
+
+.sub-heading {
+    font-size: var(--medium);
+    margin-bottom: 1.5rem;
+}
+
+.darker-blue {
+    color: var(--darker-blue);
+}
+
+.dark-grey {
+    color: var(--dark-grey);
+}
+
+
 @media (min-width: 768px) {
+    .row {
+        grid-column-gap: 4rem;
+    }
+
     .first-container {
-        padding: 6rem 0;
+        padding: 6rem 0 7rem 0;
+    }
+
+    .second-container {
+        padding: 5rem 0 6rem 0;
     }
 
     .biggest-text {
@@ -139,7 +170,8 @@ nav {
     }
 }
 
-@media (min-width: 992px) {
+
+@media (min-width: 950px) {
     .dropdown-button {
         display: none;
     }
@@ -147,13 +179,14 @@ nav {
     .dropdown-content {
         display: block;
     }
+
+    .col-md-4 {
+        grid-column: 4 span;
+    }
 }
 
-@media (min-width: 1200px) {
-    .row {
-        grid-column-gap: 4rem;
-    }
 
+@media (min-width: 1200px) {
     .col-lg-6 {
         grid-column: 6 span;
     }
